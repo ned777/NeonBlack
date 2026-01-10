@@ -16,7 +16,7 @@ A dark, tech-inspired GTK/Metacity/Cinnamon theme with teal accents.
 ## Preview
 
 ###Screenshots
-![Screenshot](screenshots/screenshot.png)
+![Screenshot](screenshots/screenshot.jpeg)
 
 ## Color Palette
 
