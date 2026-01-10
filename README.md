@@ -15,12 +15,8 @@ A dark, tech-inspired GTK/Metacity/Cinnamon theme with teal accents.
 
 ## Preview
 
-### File Manager
-![File Manager](screenshots/file-manager.png)
-*Nemo file manager showing the CyberTeal theme with teal folder icons and pure black background*
-
-### Additional Screenshots
-screenshots/Screenshots.jpeg
+###Screenshots
+screenshots/Screenshot.jpeg
 
 ## Color Palette
 
