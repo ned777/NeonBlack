@@ -16,7 +16,6 @@ A dark, tech-inspired GTK/Metacity/Cinnamon theme with teal accents.
 ## Preview
 
 ###Screenshots
-```bash
 
 ![Screenshot](Screenshots/Screenshot.png)
 
