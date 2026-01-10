@@ -1,0 +1,23 @@
+/* Cinnamon CSS for CustomMintTheme */
+/* Desktop icon selection */
+
+.icon-grid-item:selected,
+.icon-grid-item:focus,
+.icon-grid-item:selected:focus {
+    background-color: rgba(0, 128, 128, 0.7);
+    border: 3px solid #00ffff;
+    border-radius: 6px;
+}
+
+.icon-grid-label:selected {
+    color: #000000;
+    background-color: #008080;
+    padding: 2px 4px;
+}
+
+/* Desktop icon hover */
+.icon-grid-item:hover {
+    background-color: rgba(0, 128, 128, 0.3);
+    border: 2px solid #008080;
+    border-radius: 6px;
+}

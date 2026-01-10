@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Black Contrast
+Comment=Black theme with yellow focused and dark magenta unfocused window borders
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=CustomMintTheme
+MetacityTheme=CustomMintTheme
+IconTheme=Mint-Y
+CursorTheme=Bibata-Modern-Classic
+ButtonLayout=menu:minimize,maximize,close

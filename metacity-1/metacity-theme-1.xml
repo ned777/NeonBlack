@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<metacity_theme>
+<info>
+  <name>CustomMintTheme</name>
+  <author>Custom</author>
+  <copyright>2024</copyright>
+  <date>2024</date>
+  <description>Black theme with yellow focused and dark magenta unfocused borders</description>
+</info>
+
+<frame_geometry name="normal" rounded_top_left="false" rounded_top_right="false">
+  <distance name="left_width" value="1"/>
+  <distance name="right_width" value="1"/>
+  <distance name="bottom_height" value="1"/>
+  <distance name="left_titlebar_edge" value="0"/>
+  <distance name="right_titlebar_edge" value="0"/>
+  <distance name="title_vertical_pad" value="4"/>
+  <border name="title_border" left="4" right="4" top="0" bottom="0"/>
+  <border name="button_border" left="0" right="0" top="0" bottom="0"/>
+  <distance name="button_width" value="20"/>
+  <distance name="button_height" value="20"/>
+</frame_geometry>
+
+<frame_style name="normal_focused" geometry="normal">
+  <piece position="entire_background">
+    <draw_ops>
+      <rectangle color="#000000" x="0" y="0" width="width" height="height" filled="true"/>
+    </draw_ops>
+  </piece>
+  <piece position="titlebar">
+    <draw_ops>
+      <rectangle color="#000000" x="0" y="0" width="width" height="height" filled="true"/>
+    </draw_ops>
+  </piece>
+  <piece position="title">
+    <draw_ops>
+      <title color="#ffffff" x="4" y="((height - title_height) / 2)"/>
+    </draw_ops>
+  </piece>
+  <piece position="overlay">
+    <draw_ops>
+      <rectangle color="#ffff00" x="0" y="0" width="width" height="1" filled="true"/>
+      <rectangle color="#ffff00" x="0" y="0" width="1" height="height" filled="true"/>
+      <rectangle color="#ffff00" x="width-1" y="0" width="1" height="height" filled="true"/>
+      <rectangle color="#ffff00" x="0" y="height-1" width="width" height="1" filled="true"/>
+    </draw_ops>
+  </piece>
+  <button function="close" state="normal">
+    <draw_ops>
+      <rectangle color="#000000" x="0" y="0" width="width" height="height" filled="true"/>
+      <line color="#ff0000" x1="4" y1="4" x2="width-4" y2="height-4" width="2"/>
+      <line color="#ff0000" x1="width-4" y1="4" x2="4" y2="height-4" width="2"/>
+    </draw_ops>
+  </button>
+  <button function="maximize" state="normal">
+    <draw_ops>
+      <rectangle color="#000000" x="0" y="0" width="width" height="height" filled="true"/>
+      <rectangle color="#ffffff" x="4" y="4" width="width-8" height="height-8" filled="false"/>
+    </draw_ops>
+  </button>
+  <button function="minimize" state="normal">
+    <draw_ops>
+      <rectangle color="#000000" x="0" y="0" width="width" height="height" filled="true"/>
+      <line color="#ffffff" x1="4" y1="height-6" x2="width-4" y2="height-6" width="2"/>
+    </draw_ops>
+  </button>
+</frame_style>
+
+<frame_style name="normal_unfocused" geometry="normal">
+  <piece position="entire_background">
+    <draw_ops>
+      <rectangle color="#000000" x="0" y="0" width="width" height="height" filled="true"/>
+    </draw_ops>
+  </piece>
+  <piece position="titlebar">
+    <draw_ops>
+      <rectangle color="#000000" x="0" y="0" width="width" height="height" filled="true"/>
+    </draw_ops>
+  </piece>
+  <piece position="title">
+    <draw_ops>
+      <title color="#888888" x="4" y="((height - title_height) / 2)"/>
+    </draw_ops>
+  </piece>
+  <piece position="overlay">
+    <draw_ops>
+      <rectangle color="#008080" x="0" y="0" width="width" height="1" filled="true"/>
+      <rectangle color="#008080" x="0" y="0" width="1" height="height" filled="true"/>
+      <rectangle color="#008080" x="width-1" y="0" width="1" height="height" filled="true"/>
+      <rectangle color="#008080" x="0" y="height-1" width="width" height="1" filled="true"/>
+    </draw_ops>
+  </piece>
+  <button function="close" state="normal">
+    <draw_ops>
+      <rectangle color="#000000" x="0" y="0" width="width" height="height" filled="true"/>
+      <line color="#666666" x1="4" y1="4" x2="width-4" y2="height-4" width="2"/>
+      <line color="#666666" x1="width-4" y1="4" x2="4" y2="height-4" width="2"/>
+    </draw_ops>
+  </button>
+  <button function="maximize" state="normal">
+    <draw_ops>
+      <rectangle color="#000000" x="0" y="0" width="width" height="height" filled="true"/>
+      <rectangle color="#666666" x="4" y="4" width="width-8" height="height-8" filled="false"/>
+    </draw_ops>
+  </button>
+  <button function="minimize" state="normal">
+    <draw_ops>
+      <rectangle color="#000000" x="0" y="0" width="width" height="height" filled="true"/>
+      <line color="#666666" x1="4" y1="height-6" x2="width-4" y2="height-6" width="2"/>
+    </draw_ops>
+  </button>
+</frame_style>
+
+<frame_style_set name="normal">
+  <frame focus="yes" state="normal" resize="both" style="normal_focused"/>
+  <frame focus="no" state="normal" resize="both" style="normal_unfocused"/>
+  <frame focus="yes" state="maximized" style="normal_focused"/>
+  <frame focus="no" state="maximized" style="normal_unfocused"/>
+  <frame focus="yes" state="shaded" style="normal_focused"/>
+  <frame focus="no" state="shaded" style="normal_unfocused"/>
+  <frame focus="yes" state="maximized_and_shaded" style="normal_focused"/>
+  <frame focus="no" state="maximized_and_shaded" style="normal_unfocused"/>
+</frame_style_set>
+
+<window type="normal" style_set="normal"/>
+<window type="dialog" style_set="normal"/>
+<window type="modal_dialog" style_set="normal"/>
+<window type="menu" style_set="normal"/>
+<window type="utility" style_set="normal"/>
+<window type="border" style_set="normal"/>
+
+</metacity_theme>
