@@ -291,40 +291,6 @@ popover {
     background-color: #0a0a0a;
 }
 
-/* Drag and drop indicators */
-
-/* Generic drop target - DEFAULT (for main view) */
-:drop(active) {
-    background-color: rgba(255, 100, 100, 0.5);
-    border: 3px solid #ff0000;
-}
-
-/* MAIN VIEW - Moving into folder (pink background + full border) */
-.view:drop(active),
-iconview:drop(active) {
-    background-color: rgba(255, 100, 100, 0.5);
-    border: 3px solid #ff0000;
-}
-
-/* Treeview drops */
-treeview.view:drop(active) {
-    background-color: rgba(255, 100, 100, 0.5);
-    border: 3px solid #ff0000;
-}
-
-/* SIDEBAR - Pinning (pink background + LEFT border only) - MUST BE LAST */
-placessidebar row:drop(active),
-.sidebar row:drop(active),
-.sidebar .sidebar-row:drop(active),
-placessidebar.sidebar row:drop(active) {
-    background-color: rgba(255, 100, 100, 0.5) !important;
-    border-left: 4px solid #00aaaa !important;  /* Teal left border for sidebar */
-    border-top: none !important;
-    border-bottom: none !important;
-    border-right: none !important;
-}
-
-
 /* Force remove all borders from sidebar */
 .sidebar .view,
 .sidebar .view:selected,
@@ -339,6 +305,16 @@ placessidebar.sidebar row:drop(active) {
     border-top: 0 !important;
     border-bottom: 0 !important;
 }
+
+treeview.view:drop(active) {
+  border-style: solid none;
+  border-width: 1px;
+  border-color: #bd0068; }
+  treeview.view:drop(active).after {
+    border-top-style: none; }
+  treeview.view:drop(active).before {
+    border-bottom-style: none; }
+
 
 /* File view / content area */
 .view,
@@ -895,3 +871,4 @@ headerbar switch:checked:disabled,
 .primary-toolbar toolbar switch:checked:disabled {
   background-image: -gtk-scaled(url("assets/switch-active-insensitive-header.png"), url("assets/switch-active-insensitive-header@2.png")); }
 
+  
