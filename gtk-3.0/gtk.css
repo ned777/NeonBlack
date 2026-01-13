@@ -843,8 +843,9 @@ infobar switch:checked {
 headerbar switch:checked,
 .primary-toolbar switch:checked,
 .primary-toolbar toolbar switch:checked {
-  background-image: -gtk-scaled(url("assets/switch-active-header.png"), url("assets/switch-active-header@2.png")); }
+  background-image: -gtk-scaled(url("assets/switch-active-header-dark.png"), url("assets/switch-active-header-dark@2.png")); }
 
+  
 switch:disabled {
   background-image: -gtk-scaled(url("assets/switch-insensitive.png"), url("assets/switch-insensitive@2.png")); }
 

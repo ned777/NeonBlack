@@ -153,16 +153,16 @@ StScrollBar {
 .check-box StBin {
   width: 16px;
   height: 16px;
-  background-image: url("dark-assets/checkbox/checkbox-unchecked.svg"); }
+  background-image: url("common-assets/checkbox/checkbox-unchecked.svg"); }
 
 .check-box:focus StBin {
-  background-image: url("dark-assets/checkbox/checkbox-unchecked-focused.svg"); }
+  background-image: url("common-assets/checkbox/checkbox-unchecked-focused.svg"); }
 
 .check-box:checked StBin {
-  background-image: url("dark-assets/checkbox/checkbox-checked.svg"); }
+  background-image: url("common-assets/checkbox/checkbox-checked.svg"); }
 
 .check-box:focus:checked StBin {
-  background-image: url("dark-assets/checkbox/checkbox-checked-focused.svg"); }
+  background-image: url("common-assets/checkbox/checkbox-checked-focused.svg"); }
 
 .radiobutton CinnamonGenericContainer {
   spacing: .2em;
@@ -177,25 +177,25 @@ StScrollBar {
 .radiobutton StBin {
   width: 16px;
   height: 16px;
-  background-image: url("dark-assets/checkbox/radio-unchecked.svg"); }
+  background-image: url("common-assets/checkbox/radio-unchecked.svg"); }
 
 .radiobutton:focus StBin {
-  background-image: url("dark-assets/checkbox/radio-unchecked.svg"); }
+  background-image: url("common-assets/checkbox/radio-unchecked.svg"); }
 
 .radiobutton:checked StBin {
-  background-image: url("dark-assets/checkbox/radio-checked.svg"); }
+  background-image: url("common-assets/checkbox/radio-checked.svg"); }
 
 .radiobutton:focus:checked StBin {
-  background-image: url("dark-assets/checkbox/radio-checked.svg"); }
+  background-image: url("common-assets/checkbox/radio-checked.svg"); }
 
 .toggle-switch {
   width: 50px;
   height: 20px;
   background-size: contain; }
   .toggle-switch-us, .toggle-switch-intl {
-    background-image: url("dark-assets/switch/switch-off.svg"); }
+    background-image: url("common-assets/switch/switch-off.svg"); }
     .toggle-switch-us:checked, .toggle-switch-intl:checked {
-      background-image: url("dark-assets/switch/switch-on.svg"); }
+      background-image: url("common-assets/switch/switch-on.svg"); }
 
 .cinnamon-link {
   color: #77c5ec;
